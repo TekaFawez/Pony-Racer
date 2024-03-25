@@ -2,7 +2,10 @@
     @for(race of races;track race){
         <div  >
             <h2>{{race.name}}</h2>
+            <ul>    
+                     <li><fi-race [raceModel]="race"></fi-race></li>
+            </ul>
         </div>
     }
-    
+  
 </div>
