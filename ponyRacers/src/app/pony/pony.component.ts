@@ -12,14 +12,13 @@ export class PonyComponent {
   @Input() ponyModel!: PonyModel;
   @Output() ponyClicked = new EventEmitter<PonyModel>();
 
-
   getPonyImageUrl(){
        return `assets/images/pony-${this.ponyModel.color.toLowerCase()}.gif`;
 
   }
   
   clicked(){
-this.ponyClicked.emit()
+   this.ponyClicked.emit()
 
   }
 }

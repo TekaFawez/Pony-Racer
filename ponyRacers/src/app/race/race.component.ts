@@ -12,9 +12,11 @@ import { PonyComponent } from '../pony/pony.component';
 export class RaceComponent {
   @Input ({required : true}) raceModel !:RaceModel ;
 
-  constructor(){
+  constructor(){ }
 
+ clicked(value:any){
+  console.log(this.raceModel.name);
+  
   }
-
  
 }
