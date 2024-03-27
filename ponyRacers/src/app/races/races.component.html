@@ -2,6 +2,7 @@
     @for(race of races;track race){
         <div  >
             <h2>{{race.name}}</h2>
+            <p> {{ race.startInstant | fromNow }}</p>
             <ul>    
                      <li><fi-race [raceModel]="race"></fi-race></li>
             </ul>
